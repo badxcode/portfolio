@@ -1,12 +1,319 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="scroll-smooth">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="/asset/styles.css" rel="stylesheet">
+  <title>Jahid Imran - Portfolio</title>
 </head>
-<body>
-    <h1>Hello World</h1>
-    <h2>Test</h2>
+
+<body class="bg-gradient-to-b from-slate-600 to-slate-900">
+
+  <section class="flex flex-col min-h-screen  text-white pb-6">
+    <!-- Navigation -->
+    <nav class=" text-white bg-slate-900 flex justify-between items-center py-3 px-5">
+      <h1 class="text-xl font-bold">badxcode@the-machine$</h1>
+      <div class="flex items-center space-x-5 text-mb font-bold">
+        <ul class="flex space-x-10 text-gray-300 font-bold ">
+          <li class="hover:text-red-600"><a href="#whoami">whoami</a></li>
+          <li class="hover:text-red-600"><a href="#services">Services</a></li>
+          <li class="hover:text-red-600"><a href="#skills">Skills</a></li>
+          <li class="hover:text-red-600"><a href="#contact-me">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Hero Section Content-->
+    <div class="flex-1 flex items-center">
+      <div class="text-center mx-auto">
+        <img class="rounded-full mx-auto mt-5" height="300px" width="300px" src="./asset/images/ben10.jpg" alt="Ben 10">
+        <h1 class="text-6xl font-semibold mt-4">Jahid Imran</h1>
+        <p class="font-light text-3xl mt-2">Hacker, Researcher, Programmer</p>
+        <div class="text-3xl mt-5">
+          <a href="mailto:jahidimran21cde@gmail.com"><i class="fa-solid fa-at"></i></a>
+          <a href="https://github.com/badxcode"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/jahid-imran"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://x.com/badxcode"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://reddit.com/badxcode"><i class="fa-brands fa-reddit-alien"></i></a>
+          <a href="https://facebook.com/profile.vbs"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div class="space-x-16 text-black">
+          <a class="px-5 py-2 inline-block bg-green-500 hover:bg-green-600 transition-colors mt-10" href="#">Writeups</a>
+          <a class="px-5 py-2 inline-block bg-red-500 hover:bg-red-600 transition-colors mt-10" href="#services">Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class=" p-6 flex flex-col items-center justify-center w-full  text-white" id="whoami">
+    <div class="max-w-3xl w-full items-center mx-auto flex flex-col-reverse md:flex-row justify-between">
+      <div class="flex flex-col items-center">
+        <div class="pb-5">
+          <h1 class="text-4xl py-5 text-center md:text-left">Jahid Imran</h1>
+          <p class="w-96 text-justify">
+            Hey there, I’m Jahid Imran but you’d find me online as badxcode. I’m a hacker, researcher and programmer
+            madly in love with infosec. Currently I’m focusing on Web App Security but I also like doing Pentesting and
+            Malwares. Often times you’d find me hacking machines on HTB, learning on TryHackMe or doing labs from
+            Portswiggers. Curious, introvert and don’t have a clue about the world.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-3 w-full">
+          <a class="px-3 py-2 inline-block bg-green-500 hover:bg-red-600 transition-colors ">H1</a>
+          <a class="px-3 py-2 inline-block bg-green-500 hover:bg-red-600 transition-colors ">Bugcrowd</a>
+          <a class="px-3 py-2 inline-block bg-green-500 hover:bg-red-600 transition-colors ">CTFTime</a>
+          <a class="px-3 py-2 inline-block bg-green-500 hover:bg-red-600 transition-colors ">HTB</a>
+          <a class="px-3 py-2 inline-block bg-green-500 hover:bg-red-600 transition-colors ">THM</a>
+        </div>
+      </div>
+      <div class="py-5">
+        <img width="300px" height="300px" src="./asset/images/jahid-imran.jpg" alt="Jahid Imran">
+      </div>
+    </div>
+
+  </section>
+
+  <section class=" text-white" id="services">
+    <div class="max-w-3xl mx-auto ">
+      <h1 class="text-4xl font-bold py-10 text-center">Pentesting & Red Teaming</h1>
+      <div class="text-justify grid md:grid-cols-2">
+        <div class="p-3">
+          <h1 class="text-2xl py-2">Web Application Pentesting</h1>
+          <p>Web application pentests will allow me to look for commonly found vulnerabilities using industry standards
+            and frameworks such as OWASP Top 10. This will help understand your website’s security posture.</p>
+        </div>
+        <div class="p-3">
+          <h1 class="text-2xl py-2">Mobile Application Pentesting</h1>
+          <p>Mobile application penetration testing is the process of testing mobile apps to detect and identify
+            loopholes
+            or vulnerabilities before they are exploited for malicious gain to analyze the severity posed by them to the
+            application through manual or automated penetration testing.</p>
+        </div>
+        <div class="p-3">
+          <h1 class="text-2xl py-2">Network Pentesting</h1>
+          <p>Penetration testing, or pen testing, involves simulating cyberattacks against your own systems to help
+            identify any vulnerabilities that could be potentially exploited. Network penetration tests use various
+            hacking techniques to identify security vulnerabilities in your networks. These tests use real methods and
+            approaches that a hacker could use to access the system, providing critical information about the security
+            of
+            a network.</p>
+        </div>
+        <div class="p-3">
+          <h1 class="text-2xl py-2">Vulnerability Assesment</h1>
+          <p>A vulnerability assessment is the testing process used to identify and assign severity levels to as many
+            security defects as possible in a given timeframe. This process may involve automated and manual techniques
+            with varying degrees of rigor and an emphasis on comprehensive coverage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class=" text-white pb-5" id="skills">
+    <div class=" pb-5 ">
+      <div class="max-w-3xl mx-auto px-3">
+        <h1 class="text-4xl font-bold py-10 text-center">Things I'm Good At </h1>
+
+        <div class="grid grid-cols-2 gap-6">
+
+          <div class="space-y-2">
+            <!-- Skill 1 -->
+            <div class="flex items-center justify-between">
+              <span class="">Web App Pentesting</span>
+              <div class="relative w-32 h-4 bg-gray-300 rounded-full">
+                <div class="absolute h-4 bg-slate-500 rounded-full" style="width: 95%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="flex items-center justify-between">
+              <span class="">Mobile App Pentesting
+              </span>
+              <div class="relative w-32 h-4 bg-gray-300 rounded-full">
+                <div class="absolute h-4 bg-slate-500 rounded-full" style="width: 60%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="flex items-center justify-between">
+              <span class="">API Security Testing</span>
+              <div class="relative w-32 h-4 bg-gray-300 rounded-full">
+                <div class="absolute h-4 bg-slate-500 rounded-full" style="width: 75%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="flex items-center justify-between">
+              <span class="">Network Pentesting
+              </span>
+              <div class="relative w-32 h-4 bg-gray-300 rounded-full">
+                <div class="absolute h-4 bg-slate-500 rounded-full" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="flex items-center justify-between">
+              <span class="">Capture The Flag(CTF)</span>
+              <div class="relative w-32 h-4 bg-gray-300 rounded-full">
+                <div class="absolute h-4 bg-slate-500 rounded-full" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <!-- Skill 3 -->
+            <div class="flex items-center justify-between">
+              <span class="">Python</span>
+              <div class="relative w-32 h-4 bg-gray-300 rounded-full">
+                <div class="absolute h-4 bg-slate-500 rounded-full" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="flex items-center justify-between">
+              <span class="">JavaScript</span>
+              <div class="relative w-32 h-4 bg-gray-300 rounded-full">
+                <div class="absolute h-4 bg-slate-500 rounded-full" style="width: 60%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="flex items-center justify-between">
+              <span class="">Bash</span>
+              <div class="relative w-32 h-4 bg-gray-300 rounded-full">
+                <div class="absolute h-4 bg-slate-500 rounded-full" style="width: 70%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="flex items-center justify-between">
+              <span class="">C/C++</span>
+              <div class="relative w-32 h-4 bg-gray-300 rounded-full">
+                <div class="absolute h-4 bg-slate-500 rounded-full" style="width: 100%;"></div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <span class="">MySQL</span>
+              <div class="relative w-32 h-4 bg-gray-300 rounded-full">
+                <div class="absolute h-4 bg-slate-500 rounded-full" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class=" text-white pb-5" id="contact-me">
+    <div class=" pb-5 ">
+      <div class="max-w-3xl mx-auto px-3">
+        <h1 class="text-4xl font-bold pt-5 text-center">Business Inquiries</h1>
+        <h2 class="text-2xl font-bold py-1 text-center">nc -lvnp 1337</h2>
+
+        <form class="bg-slate-900 shadow-md rounded px-8 pt-6 pb-8 mb-4" method="POST" action="mailto:jahidimran21cde@gmail.com">
+
+          <div class="flex justify-between gap-6">
+          <!-- First Name -->
+          <div class="w-full mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="first_name">
+              First Name
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="first_name"
+              type="text"
+              placeholder="First Name"
+              required
+            />
+          </div>
+      
+          <!-- Last Name -->
+          <div class="w-full mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="last_name">
+              Last Name
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="last_name"
+              type="text"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+        </div>
+      
+          <!-- Email -->
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+              Email
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+      
+          <!-- Subject -->
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="subject">
+              Subject
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="subject"
+              type="text"
+              placeholder="Subject"
+              required
+            />
+          </div>
+      
+          <!-- Message -->
+          <div class="mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+              Message
+            </label>
+            <textarea
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32 resize-none"
+              id="message"
+              placeholder="Your message here..."
+              required
+            ></textarea>
+          </div>
+      
+          <!-- Submit Button -->
+          <div class="flex items-center justify-between">
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+  </section>
+
+  <footer class=" text-white bg-slate-900 py-3 px-5">
+    <h1 class="text-mb text-center font-bold">&lt;/&gt; with &lt;3 by Jahid Imran</h1>
+  </footer>
+
+  
+
+
+
 </body>
+
 </html>
